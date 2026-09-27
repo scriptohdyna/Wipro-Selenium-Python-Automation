@@ -1,0 +1,49 @@
+Alert Popup
+Keyboard Actions – Copy & Paste
+Scroll & Click About
+Drag and Drop
+Mouse Hover – Mobiles
+
+1. Two URL's to be launched in two table in two tabs simultaneously .
+    driver.get("1st URL")
+    driver.switch_to.new_window ('tab')
+    driver.get ("2nd URL")
+
+2. To open the 1st URL, then click on 'New tab', perform a task on this new tab,
+   then close this tab, come back to the 1st tab and write your name.
+
+   driver.get("1st URL")
+   parent_window=driver.current_window_handle
+   print(parent_window)
+   FILL IN THE BLANKS
+   new_tab=driver.find_element (By.XPATH, "    ").click()    -> USE RIGHT CLICK ON A URL
+   windows=driver.window_handles
+   print(windows)
+
+3. Open an URL, use Sliders which includes MAX and MIN, print both.
+   Select the current date and a future date and print both.
+
+4. First click Iframe within an iframe, click on outerframe then innerframe, then text box, perform action.
+   outerframe= driver.find_element(By.XPATH, "    ") ->https://the-internet.herokuapp.com/nested_frames
+   innerframe= driver.find_element(By.XPATH, "    ")
+
+5. Upload a file into the webpage through Automation
+
+6. Navigate to other sections of the Webpage, click on "Web table" and perform actions.
+
+7. REAL WORLD SCEnarios:
+
+i. If I have a single Python file having 10 test cases and I want to skip 8 test cases.
+Is it possible with Selenium in Python?
+
+ii. What is Pytest? open source automation tool, Fixtures, reports, parallel testing.
+Example: 10 test cases to be executed on two browsers (Not possible only with Selenium)
+You need-> Batch testing: bunch of test cases, whenever we need a new version,
+Bunch test is executed to generate a report.
+If the bunch of test cases are passes only then we accept the version of the Webpage.
+This is done by Pytest. (pip install pytest)
+
+TASK: Check "https://testautomationpractice.blogspot.com/" and generate a report on its functionality.
+
+Save a screenshot through automation 
+Save multiple screenshots throuth automation it is possible ?
