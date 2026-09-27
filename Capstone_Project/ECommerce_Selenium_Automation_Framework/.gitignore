@@ -1,0 +1,27 @@
+# Virtual environment
+venv/
+.venv/
+
+# Python cache / bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Generated reports and screenshots 
+reports/*
+!reports/.gitkeep
+screenshots/*
+!screenshots/.gitkeep
+
+# Local secrets / environment overrides
+.env
+local_config.ini
+*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
