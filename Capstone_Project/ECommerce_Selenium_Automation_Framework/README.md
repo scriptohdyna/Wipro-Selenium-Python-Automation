@@ -138,21 +138,4 @@ The `data/test_data.csv` file contains sample placeholder data for tests, such a
 
 The registration happy-path test generates a unique placeholder email for each run to reduce conflicts with previously created demo accounts.
 
-## 8. Troubleshooting
 
-If a test fails because Selenium cannot locate an element, verify the corresponding locator in the relevant page object file. The demo site’s HTML may change, so some selectors might need adjustment.
-
-If a test fails or times out:
-
-1. Check the error message and identify the failing test and page object.
-2. Open the relevant page in Chrome and inspect the element.
-3. Update the locator in the corresponding page class if necessary.
-4. Rerun the affected test before running the full suite.
-
-For browser or driver startup issues, confirm that Chrome is installed and that Selenium Manager can access the internet to obtain a compatible driver. If automatic driver management is unavailable, configure a compatible ChromeDriver manually.
-
-## 9. Notes
-
-* Use only sample or otherwise safe test data.
-* Keep local credentials out of version control; the project’s `.gitignore` excludes suggested local configuration files such as `.env` and `local_config.ini`.
-* Run the tests locally and review the generated report to confirm the current results and identify any site-related selector changes.
